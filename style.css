@@ -1,0 +1,46 @@
+table, td, th {
+    border: 2px solid black;
+    text-align: center;
+
+}
+
+.grid {
+    border: 2px blue solid;
+    background-color: cornflowerblue;
+    
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+  row-gap:15px;
+  column-gap: 20px;
+  padding: 20px;
+  }
+  
+  .box {
+    background-color: beige;
+    color: black;
+    border-radius: 5px;
+    border: 2px dodgerblue solid;
+  }
+
+  .a{
+    grid-column: 1 / span 1 ;
+    grid-row: 1/ span 2;
+    background-color: red;
+  }
+  .b{
+    grid-column: 2 /span 1;
+    grid-row: 1 / span 2;
+    background-color: yellow;
+  }
+  .c{
+    grid-column: 3 / span 2 ;
+    background-color: green;
+
+  } 
+  
+  .d{
+    grid-column: 3 /span 2;
+    grid-row: 2 / span 1;
+    background-color: red;
+
+  }
